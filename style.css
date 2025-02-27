@@ -1,9 +1,8 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Body Background */
@@ -21,79 +20,105 @@
     margin-bottom: 20px;
 } */
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(to bottom, white, grey);
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, white, grey);
 }
 
-#weather-container{
-    max-width: 410px;
+#weather-container {
+  max-width: 410px;
 
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
-    border-radius: 15px;
-    box-shadow: 5px 4px 10px black;
-    background-color: rgb(226, 223, 223);
-
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  border-radius: 15px;
+  box-shadow: 5px 4px 10px black;
+  background-color: rgb(226, 223, 223);
 }
-.userInput{
-    display: flex;
-    padding: 10px 5px;
-text-align: center;
+.userInput {
+  display: flex;
+  padding: 10px 5px;
+  text-align: center;
 }
 #city-input {
-    width: 100%;
-    padding: 12px 15px;
-    font-size: 16px;
-    border: 2px solid #3498db;
-    border-radius: 25px;
-    outline: none;
-    transition: 0.3s ease-in-out;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 2px solid #3498db;
+  border-radius: 25px;
+  outline: none;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Input Focus Effect */
 #city-input:focus {
-    border-color: #2ecc71;
-    box-shadow: 0 0 10px rgba(46, 204, 113, 0.5);
+  border-color: #2ecc71;
+  box-shadow: 0 0 10px rgba(46, 204, 113, 0.5);
 }
 
 /* Stylish Button */
 #search-btn {
-    background-color: #3498db;
-    color: white;
-    font-size: 16px;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    font-weight: bold;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #3498db;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Button Hover Effect */
 #search-btn:hover {
-    background-color: #2980b9;
+  background-color: #2980b9;
 }
-.userInput button{
-    background-color: rgb(8, 48, 228);
-    color: white;
+.userInput button {
+  background-color: rgb(8, 48, 228);
+  color: white;
 }
-#weather-details{
-    display: grid;
-    /* border: 1px solid grey; */
-    gap: 10px;
-    padding: 15px 10px;
+#weather-details {
+  display: grid;
+  /* border: 1px solid grey; */
+  gap: 10px;
+  padding: 15px 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .userInput {
+    display: flex;
+    padding: 7px 5px;
+    text-align: center;
+    flex-direction: column;
+  }
+  #weather-container {
+    max-width: 410px;
+    width: 100%;
+    display: flex;
+    flex-direction: flex-start;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: center;
-   
-    
+    padding: 20px 5px;
+    border-radius: 15px;
+    box-shadow: 5px 4px 10px black;
+    background-color: rgb(226, 223, 223);
+  }
+  #search-btn {
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  #city-input {
+    border-radius: 5px;
+  }
 }
+
